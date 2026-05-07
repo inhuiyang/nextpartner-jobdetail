@@ -344,6 +344,26 @@
       </div><!-- /탭 바 카드 -->
 
 
+      
+
+
+      <!-- 복리후생 -->
+      <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
+        <h2 class="text-xl font-bold text-neutral-900 mb-4 flex items-center gap-2">
+          <span class="w-1 h-5 bg-primary-500 rounded-pill inline-block"></span>
+          복리후생
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="np-chip">4대 보험</span>
+          <span class="np-chip">퇴직금</span>
+          <span class="np-chip">연차 유급휴가</span>
+          <span class="np-chip">명절 상여금</span>
+          <span class="np-chip">작업복 지급</span>
+          <span class="np-chip">청소 용품 일체 지급</span>
+        </div>
+      </div><!-- /복리후생 -->
+      
+
       <!-- 근무 위치 -->
       <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
         <h2 class="text-xl font-bold text-neutral-900 mb-4 flex items-center gap-2">
@@ -376,23 +396,6 @@
           </div>
         </div>
       </div><!-- /근무 위치 -->
-
-
-      <!-- 복리후생 -->
-      <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
-        <h2 class="text-xl font-bold text-neutral-900 mb-4 flex items-center gap-2">
-          <span class="w-1 h-5 bg-primary-500 rounded-pill inline-block"></span>
-          복리후생
-        </h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="np-chip">4대 보험</span>
-          <span class="np-chip">퇴직금</span>
-          <span class="np-chip">연차 유급휴가</span>
-          <span class="np-chip">명절 상여금</span>
-          <span class="np-chip">작업복 지급</span>
-          <span class="np-chip">청소 용품 일체 지급</span>
-        </div>
-      </div><!-- /복리후생 -->
 
 
       <!-- 기업정보 -->
@@ -432,49 +435,13 @@
       </div><!-- /기업정보 -->
 
 
-      <!-- 유사 일자리 -->
-      <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
-        <div class="flex items-center justify-between mb-5">
-          <h2 class="text-xl font-bold text-neutral-900">유사한 일자리</h2>
-          <a class="flex items-center gap-1 text-base text-primary-500 font-semibold hover:text-primary-400 transition-colors cursor-pointer">
-            더보기
-            <i data-lucide="chevron-right" style="width:16px;height:16px;"></i>
-          </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-          <div class="np-job-card">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="np-job-card-company">주식회사 한국환경</span>
-              <span class="np-job-card-urgency">마감 D-5</span>
-            </div>
-            <h3 class="np-job-card-title mb-3">마포구 초등학교 청소 미화원 구인 (오전 파트타임)</h3>
-            <p class="np-job-card-meta mb-1">서울 마포구 | 파트타임 | 주 5일</p>
-            <p class="np-job-card-pay mb-4">월 2,300,000원</p>
-            <button class="np-btn np-btn-grey-stroke np-btn-sm w-full mt-auto">자세히 보기</button>
-          </div>
-
-          <div class="np-job-card">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="np-job-card-company">서초환경관리</span>
-              <span class="np-job-card-urgency">마감 D-7</span>
-            </div>
-            <h3 class="np-job-card-title mb-3">강남구 중학교 교실 청소 직원 모집 (신입 환영)</h3>
-            <p class="np-job-card-meta mb-1">서울 강남구 | 파트타임 | 주 5일</p>
-            <p class="np-job-card-pay mb-4">월 2,500,000원</p>
-            <button class="np-btn np-btn-grey-stroke np-btn-sm w-full mt-auto">자세히 보기</button>
-          </div>
-
-        </div>
-      </div>
-
     </div><!-- /MAIN CONTENT -->
 
 
     <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
          SIDEBAR (RIGHT, 데스크탑만 표시)
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-    <div class="hidden lg:flex flex-col gap-4 w-[340px] shrink-0">
+    <div class="hidden lg:flex flex-col gap-4 w-[340px] shrink-0 self-start">
 
       <!-- 지원하기 CTA 카드 (sticky) -->
       <div class="bg-neutral-0 rounded-card border border-neutral-200 p-6 sticky top-20 flex flex-col gap-4">
@@ -522,6 +489,49 @@
         </div>
 
       </div><!-- /CTA 카드 -->
+
+      <!-- 유사한 일자리 -->
+      <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-base font-bold text-neutral-900">유사한 일자리</h3>
+        </div>
+        <div class="flex flex-col gap-3">
+
+          <div class="np-job-card">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="np-job-card-company">주식회사 한국환경</span>
+              <span class="np-job-card-urgency">마감 D-5</span>
+            </div>
+            <h3 class="np-job-card-title mb-3">마포구 초등학교 청소 미화원 구인 (오전 파트타임)</h3>
+            <p class="np-job-card-meta mb-1">서울 마포구 | 파트타임 | 주 5일</p>
+            <p class="np-job-card-pay mb-4">월 2,300,000원</p>
+            <button class="np-btn np-btn-grey-stroke np-btn-sm w-full mt-auto">자세히 보기</button>
+          </div>
+
+          <div class="np-job-card">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="np-job-card-company">서초환경관리</span>
+              <span class="np-job-card-urgency">마감 D-7</span>
+            </div>
+            <h3 class="np-job-card-title mb-3">강남구 중학교 교실 청소 직원 모집 (신입 환영)</h3>
+            <p class="np-job-card-meta mb-1">서울 강남구 | 파트타임 | 주 5일</p>
+            <p class="np-job-card-pay mb-4">월 2,500,000원</p>
+            <button class="np-btn np-btn-grey-stroke np-btn-sm w-full mt-auto">자세히 보기</button>
+          </div>
+
+          <div class="np-job-card">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="np-job-card-company">용산환경서비스</span>
+              <span class="np-job-card-urgency">마감 D-10</span>
+            </div>
+            <h3 class="np-job-card-title mb-3">용산구 초·중학교 미화원 모집 (오전 단시간 근무)</h3>
+            <p class="np-job-card-meta mb-1">서울 용산구 | 파트타임 | 주 5일</p>
+            <p class="np-job-card-pay mb-4">월 2,250,000원</p>
+            <button class="np-btn np-btn-grey-stroke np-btn-sm w-full mt-auto">자세히 보기</button>
+          </div>
+
+        </div>
+      </div><!-- /유사한 일자리 -->
 
     </div><!-- /SIDEBAR -->
 
