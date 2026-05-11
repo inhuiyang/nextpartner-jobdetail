@@ -86,13 +86,11 @@
               <p class="text-base text-neutral-400 mb-1">주식회사 영동환경</p>
               <div class="flex items-center gap-2 flex-wrap">
                 <span class="np-badge np-badge-warning">마감 D-3</span>
+                <span class="text-primary-500 font-semibold">마감 2026-05-08</span>
               </div>
             </div>
           </div>
-          <!-- 북마크 버튼 (데스크탑) -->
-          <button class="hidden md:flex items-center justify-center w-10 h-10 rounded-button border border-neutral-200 text-neutral-400 hover:text-primary-500 hover:border-primary-500 transition-colors shrink-0" aria-label="북마크">
-            <i data-lucide="bookmark" style="width:20px;height:20px;"></i>
-          </button>
+
         </div>
 
         <!-- 공고 제목 -->
@@ -158,11 +156,6 @@
 
         <!-- 등록/마감일 + 모바일 북마크 -->
         <div class="flex items-center justify-between mt-4">
-          <div class="flex items-center gap-4 text-base text-neutral-400">
-            <span>등록일 2026-04-06</span>
-            <span class="text-neutral-200">|</span>
-            <span class="text-primary-500 font-semibold">마감 2026-05-08</span>
-          </div>
           <!-- 북마크 버튼 (모바일) -->
           <button class="flex md:hidden items-center justify-center w-10 h-10 rounded-button border border-neutral-200 text-neutral-400 hover:text-primary-500 hover:border-primary-500 transition-colors" aria-label="북마크">
             <i data-lucide="bookmark" style="width:20px;height:20px;"></i>
@@ -259,48 +252,27 @@
             <p class="text-base">지도를 불러오는 중입니다</p>
           </div>
         </div>
-        <!-- 대중교통 정보 -->
-        <div class="mt-4 flex flex-col gap-2">
-          <div class="flex items-center gap-2 text-base text-neutral-600">
-            <i data-lucide="train-front" style="width:16px;height:16px;color:#999999;"></i>
-            지하철 2호선 영등포구청역 1번 출구에서 도보 8분
-          </div>
-          <div class="flex items-center gap-2 text-base text-neutral-600">
-            <i data-lucide="bus" style="width:16px;height:16px;color:#999999;"></i>
-            버스 5-1, 11, 5516번 영동초교 정류장 하차
-          </div>
-        </div>
       </div><!-- /근무 위치 -->
 
 
       <!-- 기업정보 -->
       <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
-        <div class="flex items-center gap-4 mb-6">
-          <div class="w-16 h-16 rounded-card border border-neutral-200 bg-neutral-50 flex items-center justify-center shrink-0">
+        <div class="flex items-center gap-4">
+          <!-- 회사 로고 -->
+          <div class="w-16 h-16 rounded-card border border-neutral-200 bg-neutral-50 flex items-center justify-center shrink-0 overflow-hidden">
             <i data-lucide="building-2" style="width:28px;height:28px;color:#999999;"></i>
           </div>
-          <div>
-            <h2 class="text-xl font-bold text-neutral-900">주식회사 영동환경</h2>
-            <p class="text-base text-neutral-400 mt-1">환경·청소·미화 서비스</p>
-          </div>
-        </div>
-        <hr class="np-divider mb-6" />
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-          <div class="flex flex-col gap-1 py-3 border-b border-neutral-100">
-            <p class="text-base text-neutral-400">업종</p>
-            <p class="text-lg font-medium text-neutral-900">환경·청소·시설관리</p>
-          </div>
-          <div class="flex flex-col gap-1 py-3 border-b border-neutral-100">
-            <p class="text-base text-neutral-400">기업 규모</p>
-            <p class="text-lg font-medium text-neutral-900">중소기업 (직원 85명)</p>
-          </div>
-          <div class="flex flex-col gap-1 py-3 border-b border-neutral-100 md:border-b-0">
-            <p class="text-base text-neutral-400">설립연도</p>
-            <p class="text-lg font-medium text-neutral-900">2008년</p>
-          </div>
-          <div class="flex flex-col gap-1 py-3 border-b border-neutral-100 md:border-b-0">
-            <p class="text-base text-neutral-400">소재지</p>
-            <p class="text-lg font-medium text-neutral-900">서울 영등포구</p>
+          <div class="flex flex-col gap-2">
+            <h2 class="text-xl font-bold text-neutral-900">(주)모리아타운</h2>
+            <p class="text-base text-neutral-400">대표자: 권오형</p>
+            <div class="flex items-center gap-1 text-base text-neutral-600">
+              <i data-lucide="map-pin" style="width:16px;height:16px;color:#999999;flex-shrink:0;"></i>
+              서울 송파구 법원로 114 B동 915호
+            </div>
+            <a href="#" class="flex items-center gap-1 text-base text-primary-500 hover:text-primary-400 transition-colors">
+              <i data-lucide="external-link" style="width:16px;height:16px;flex-shrink:0;"></i>
+              홈페이지 바로가기
+            </a>
           </div>
         </div>
       </div><!-- /기업정보 -->
@@ -346,7 +318,7 @@
         <div class="flex gap-2">
           <button class="np-btn np-btn-grey-stroke np-btn-md flex-1">
             <i data-lucide="bookmark" style="width:20px;height:20px;"></i>
-            북마크
+            저장
           </button>
           <button class="np-btn np-btn-grey-stroke np-btn-md flex-1">
             <i data-lucide="share-2" style="width:20px;height:20px;"></i>
