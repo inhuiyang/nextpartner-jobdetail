@@ -143,10 +143,6 @@
             <p class="text-base text-neutral-400 font-medium">급여</p>
             <p class="text-lg font-semibold text-neutral-900">월 2,400,000원 (세전)</p>
           </div>
-          <div class="flex flex-col gap-1 p-4 bg-neutral-50 rounded-card">
-            <p class="text-base text-neutral-400 font-medium">급여 지급일</p>
-            <p class="text-lg font-semibold text-neutral-900">매월 25일</p>
-          </div>
         </div>
 
         <!-- 등록/마감일 + 모바일 북마크 -->
@@ -172,7 +168,7 @@
 
           <!-- 주요 업무 -->
           <section>
-            <h2 class="text-xl font-bold text-neutral-900 mb-4">주요 업무</h2>
+            <h2 class="text-xl font-bold text-neutral-900 mb-4 flex items-center gap-2">주요 업무</h2>
             <ul class="flex flex-col gap-3">
               <li class="text-lg text-neutral-700 leading-relaxed">영동초등학교 교실 및 복도 청소·미화 업무</li>
               <li class="text-lg text-neutral-700 leading-relaxed">화장실 청소 및 소독 관리</li>
@@ -185,7 +181,7 @@
 
           <!-- 자격 조건 -->
           <section>
-            <h2 class="text-xl font-bold text-neutral-900 mb-4">자격 조건</h2>
+            <h2 class="text-xl font-bold text-neutral-900 mb-4 flex items-center gap-2">자격 조건</h2>
             <ul class="flex flex-col gap-3">
               <li class="text-lg text-neutral-700 leading-relaxed">학력 무관</li>
               <li class="text-lg text-neutral-700 leading-relaxed">경력 무관 (신입 지원 가능)</li>
@@ -198,7 +194,7 @@
 
           <!-- 우대 조건 -->
           <section>
-            <h2 class="text-xl font-bold text-neutral-900 mb-4">우대 조건</h2>
+            <h2 class="text-xl font-bold text-neutral-900 mb-4 flex items-center gap-2">우대 조건</h2>
             <ul class="flex flex-col gap-3">
               <li class="text-lg text-neutral-700 leading-relaxed">청소·미화 관련 경력 보유자</li>
               <li class="text-lg text-neutral-700 leading-relaxed">인근 거주자 (영등포구, 구로구, 도림동 인근)</li>
@@ -308,11 +304,6 @@
 
       <!-- 지원하기 CTA 카드 -->
       <div class="bg-neutral-0 rounded-card border border-neutral-200 p-6 flex flex-col gap-4">
-        <div>
-          <p class="text-base text-neutral-400 mb-1">예상 월급</p>
-          <p class="text-3xl font-bold text-neutral-900">2,400,000<span class="text-xl font-medium text-neutral-400">원</span></p>
-          <p class="text-base text-neutral-400 mt-1">시급 12,500원 · 주 30시간</p>
-        </div>
 
         <hr class="np-divider" />
 
@@ -485,6 +476,31 @@
 </div>
 
 
+<script>
+// 탭 인터랙션
+(function () {
+  var bar = document.getElementById('detail-tab-bar');
+  if (!bar) return;
+  bar.addEventListener('click', function (e) {
+    var item = e.target.closest('.np-tab-item');
+    if (!item || item.classList.contains('disabled')) return;
+    // 탭 아이템 활성화
+    bar.querySelectorAll('.np-tab-item').forEach(function (t) { t.classList.remove('active'); });
+    item.classList.add('active');
+    // 패널 전환
+    var target = item.getAttribute('data-tab');
+    document.querySelectorAll('.tab-panel').forEach(function (p) {
+      if (p.id === target) {
+        p.classList.remove('hidden');
+        p.classList.add('flex');
+      } else {
+        p.classList.add('hidden');
+        p.classList.remove('flex');
+      }
+    });
+  });
+})();
+</script>
 
 <script>
   lucide.createIcons({ nameAttr: 'data-lucide' });
