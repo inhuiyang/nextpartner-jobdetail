@@ -207,7 +207,147 @@
           <span class="np-chip">청소 용품 일체 지급</span>
         </div>
       </div><!-- /복리후생 -->
-      
+
+
+      <!-- 내 조건과 비교 -->
+      <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
+
+        <!-- 섹션 타이틀 -->
+        <h2 class="text-xl font-bold text-neutral-900 mb-5 flex items-center gap-2">
+          <span class="w-1 h-5 bg-primary-500 rounded-pill inline-block"></span>
+          내 조건과 비교
+        </h2>
+
+        <!-- Summary Bar -->
+        <div class="mb-4">
+          <div class="flex justify-between text-base text-neutral-400 mb-2">
+            <span>조건 일치율</span>
+            <span class="font-semibold text-neutral-900">6개 항목 중 4개 일치</span>
+          </div>
+          <div class="h-2 bg-neutral-100 rounded-pill overflow-hidden">
+            <div class="h-full bg-primary-500 rounded-pill" style="width:67%"></div>
+          </div>
+        </div>
+
+        <!-- 상태 요약 칩 -->
+        <div class="flex flex-wrap gap-2 mb-5">
+          <div class="flex items-center gap-1 px-3 py-1 bg-success-100 rounded-pill">
+            <i data-lucide="circle-check" style="width:16px;height:16px;color:#4caf50;flex-shrink:0;"></i>
+            <span class="text-base font-semibold text-success-500">일치 4개</span>
+          </div>
+          <div class="flex items-center gap-1 px-3 py-1 bg-warning-100 rounded-pill">
+            <i data-lucide="triangle-alert" style="width:16px;height:16px;color:#ff9800;flex-shrink:0;"></i>
+            <span class="text-base font-semibold text-warning-500">확인 필요 1개</span>
+          </div>
+          <div class="flex items-center gap-1 px-3 py-1 bg-error-100 rounded-pill">
+            <i data-lucide="circle-x" style="width:16px;height:16px;color:#f44336;flex-shrink:0;"></i>
+            <span class="text-base font-semibold text-error-500">불일치 1개</span>
+          </div>
+        </div>
+
+        <!-- 조건 상세 보기 토글 -->
+        <button id="compare-toggle" class="np-btn np-btn-grey-stroke np-btn-sm w-full">
+          조건 상세 보기
+          <i data-lucide="chevron-down" id="compare-chevron" style="width:16px;height:16px;transition:transform 0.2s;"></i>
+        </button>
+
+        <!-- 항목 카드 리스트 (아코디언) -->
+        <div id="compare-detail" class="hidden flex-col gap-3 mt-4">
+
+          <!-- 일치: 근무지 -->
+          <div class="rounded-card p-4 bg-success-100">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="circle-check" style="width:20px;height:20px;color:#4caf50;flex-shrink:0;"></i>
+              <span class="text-base font-semibold text-neutral-900">근무지</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base">
+              <div><p class="text-neutral-400">내 조건</p><p class="text-neutral-700 mt-0.5">송파구 일대</p></div>
+              <div><p class="text-neutral-400">공고</p><p class="text-neutral-700 mt-0.5">서울 송파구 법원로 114 B동</p></div>
+            </div>
+          </div>
+
+          <!-- 일치: 근무 형태 -->
+          <div class="rounded-card p-4 bg-success-100">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="circle-check" style="width:20px;height:20px;color:#4caf50;flex-shrink:0;"></i>
+              <span class="text-base font-semibold text-neutral-900">근무 형태</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base">
+              <div><p class="text-neutral-400">내 조건</p><p class="text-neutral-700 mt-0.5">풀타임</p></div>
+              <div><p class="text-neutral-400">공고</p><p class="text-neutral-700 mt-0.5">풀타임</p></div>
+            </div>
+          </div>
+
+          <!-- 일치: 근무 시간 -->
+          <div class="rounded-card p-4 bg-success-100">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="circle-check" style="width:20px;height:20px;color:#4caf50;flex-shrink:0;"></i>
+              <span class="text-base font-semibold text-neutral-900">근무 시간</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base">
+              <div><p class="text-neutral-400">내 조건</p><p class="text-neutral-700 mt-0.5">09:00 ~ 18:00</p></div>
+              <div><p class="text-neutral-400">공고</p><p class="text-neutral-700 mt-0.5">09:00 ~ 18:00</p></div>
+            </div>
+          </div>
+
+          <!-- 일치: 학력 -->
+          <div class="rounded-card p-4 bg-success-100">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="circle-check" style="width:20px;height:20px;color:#4caf50;flex-shrink:0;"></i>
+              <span class="text-base font-semibold text-neutral-900">학력</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base">
+              <div><p class="text-neutral-400">내 조건</p><p class="text-neutral-700 mt-0.5">대졸</p></div>
+              <div><p class="text-neutral-400">공고</p><p class="text-neutral-700 mt-0.5">대졸</p></div>
+            </div>
+          </div>
+
+          <!-- 확인 필요: 경력 -->
+          <div class="rounded-card p-4 bg-warning-100">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="triangle-alert" style="width:20px;height:20px;color:#ff9800;flex-shrink:0;"></i>
+              <span class="text-base font-semibold text-neutral-900">경력</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base mb-3">
+              <div><p class="text-neutral-400">내 이력</p><p class="text-neutral-700 mt-0.5">경력 2년 3개월</p></div>
+              <div><p class="text-neutral-400">공고</p><p class="font-semibold text-warning-500 mt-0.5">경력 무관</p></div>
+            </div>
+            <div class="flex items-center gap-1 text-base text-neutral-500">
+              <i data-lucide="lightbulb" style="width:14px;height:14px;color:#ff9800;flex-shrink:0;"></i>
+              경력 무관 공고로 지원 가능해요
+            </div>
+          </div>
+
+          <!-- 불일치: 급여 -->
+          <div class="rounded-card p-4 bg-error-100">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="circle-x" style="width:20px;height:20px;color:#f44336;flex-shrink:0;"></i>
+              <span class="text-base font-semibold text-neutral-900">급여</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base mb-3">
+              <div><p class="text-neutral-400">내 희망</p><p class="text-neutral-700 mt-0.5">월 4,000,000원~</p></div>
+              <div><p class="text-neutral-400">공고</p><p class="font-semibold text-error-500 mt-0.5">3,000만원~3,500만원</p></div>
+            </div>
+            <div class="flex items-center gap-1 text-base text-neutral-500">
+              <i data-lucide="message-circle" style="width:14px;height:14px;color:#f44336;flex-shrink:0;"></i>
+              급여는 면접 시 협의 가능해요
+            </div>
+          </div>
+
+          <!-- 하단 CTA -->
+          <div class="mt-2 p-5 bg-primary-50 border border-primary-100 rounded-card text-center">
+            <p class="text-base text-neutral-500 mb-1">이 공고, 지원해볼까요?</p>
+            <p class="text-lg font-bold text-neutral-900 mb-4">조건 6개 중 4개 일치해요 👍</p>
+            <div class="flex gap-3">
+              <button class="np-btn np-btn-grey-stroke np-btn-md flex-1">이력서 수정하기</button>
+              <button class="np-btn np-btn-primary np-btn-md flex-1">바로 지원하기</button>
+            </div>
+          </div>
+
+        </div><!-- /compare-detail -->
+
+      </div><!-- /내 조건과 비교 -->
+
 
       <!-- 근무 위치 -->
       <div class="bg-neutral-0 rounded-card border border-neutral-200 p-5 md:p-8">
@@ -461,6 +601,28 @@
 
 <script>
   lucide.createIcons({ nameAttr: 'data-lucide' });
+</script>
+
+<script>
+(function () {
+  var toggle = document.getElementById('compare-toggle');
+  var detail = document.getElementById('compare-detail');
+  var chevron = document.getElementById('compare-chevron');
+  if (!toggle || !detail) return;
+  var open = false;
+  toggle.addEventListener('click', function () {
+    open = !open;
+    if (open) {
+      detail.classList.remove('hidden');
+      detail.classList.add('flex');
+      chevron.style.transform = 'rotate(180deg)';
+    } else {
+      detail.classList.add('hidden');
+      detail.classList.remove('flex');
+      chevron.style.transform = 'rotate(0deg)';
+    }
+  });
+})();
 </script>
 
 </body>
