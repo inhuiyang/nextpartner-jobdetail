@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지원 완료 — 넥스트파트너</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="dist/index.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-base text-neutral-900 bg-neutral-50 pb-16 md:pb-0">
+
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header class="np-header sticky top-0 z-50">
+  <div class="np-header-inner">
+    <a href="#" class="flex items-center gap-2 shrink-0">
+      <img src="img/symbol.png" width="32" height="32" alt="NextPartner" />
+      <span class="text-xl font-bold text-neutral-900 tracking-tight">NextPartner</span>
+    </a>
+    <nav class="np-header-nav">
+      <a class="np-nav-link-job active">채용</a>
+      <a class="np-nav-link-job">프로젝트</a>
+      <a class="np-nav-link-job">이력서</a>
+      <div class="np-header-divider"></div>
+      <a class="np-nav-link">서비스소개</a>
+      <a class="np-nav-link">공지사항</a>
+      <a class="np-nav-link">FAQ</a>
+    </nav>
+    <div class="np-header-actions">
+      <div class="flex items-center gap-2">
+        <span class="text-base text-neutral-600">양인희님</span>
+      </div>
+      <button class="flex items-center justify-center w-10 h-10 text-neutral-400 rounded-button hover:bg-neutral-50 hover:text-neutral-800 transition-colors" aria-label="로그아웃">
+        <i data-lucide="log-out" class="w-5 h-5"></i>
+      </button>
+    </div>
+    <button class="np-header-menu-btn" aria-label="메뉴">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════
+     PAGE CONTENT
+══════════════════════════════════════════ -->
+<div class="w-full max-w-content mx-auto px-4 md:px-6 lg:px-8 py-10 md:py-16">
+  <div class="max-w-xl mx-auto flex flex-col gap-6">
+
+    <!-- 성공 아이콘 + 메시지 -->
+    <div class="bg-neutral-0 rounded-card border border-neutral-200 p-10 md:p-14 flex flex-col items-center text-center gap-6">
+      <div class="w-24 h-24 rounded-full bg-success-100 flex items-center justify-center">
+        <i data-lucide="circle-check" style="width:48px;height:48px;color:#4caf50;"></i>
+      </div>
+      <div class="flex flex-col gap-2">
+        <p class="text-lg text-neutral-400">지원이 완료되었습니다</p>
+        <h1 class="text-3xl md:text-4xl font-bold text-neutral-900">합격을 응원합니다! 🎉</h1>
+      </div>
+    </div>
+
+    <!-- 지원한 공고 요약 -->
+    <div class="bg-neutral-0 rounded-card border border-neutral-200 p-6 md:p-8">
+      <h2 class="text-lg font-semibold text-neutral-400 mb-5">지원한 공고</h2>
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-card border border-neutral-200 bg-neutral-50 flex items-center justify-center shrink-0">
+          <i data-lucide="building-2" style="width:26px;height:26px;color:#999999;"></i>
+        </div>
+        <div class="flex flex-col gap-2 min-w-0">
+          <p class="text-lg text-neutral-400">(주)모리아타운</p>
+          <p class="text-xl font-bold text-neutral-900 leading-snug">영등포구 영동초 교실 미화 1명 구인</p>
+          <div class="flex flex-wrap items-center gap-4 mt-1 text-lg text-neutral-500">
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="map-pin" style="width:16px;height:16px;flex-shrink:0;"></i>
+              서울 영등포구
+            </span>
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="won-sign" style="width:16px;height:16px;flex-shrink:0;"></i>
+              3,000만원~3,500만원
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr class="np-divider my-5" />
+      <div class="flex items-center justify-between text-lg">
+        <span class="text-neutral-400">지원일시</span>
+        <span class="font-semibold text-neutral-700" id="apply-datetime">—</span>
+      </div>
+    </div>
+
+    <!-- 다음 단계 안내 -->
+    <div class="bg-neutral-0 rounded-card border border-neutral-200 p-6 md:p-8">
+      <h2 class="text-lg font-semibold text-neutral-400 mb-6">앞으로의 절차</h2>
+      <div class="flex flex-col gap-0">
+
+        <!-- Step 1 -->
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-success-500 flex items-center justify-center shrink-0">
+              <i data-lucide="check" style="width:18px;height:18px;color:#ffffff;"></i>
+            </div>
+            <div class="w-0.5 flex-1 bg-neutral-200 my-1.5"></div>
+          </div>
+          <div class="pb-6">
+            <p class="text-lg font-semibold text-neutral-900 leading-tight mb-1">지원 완료</p>
+            <p class="text-lg text-neutral-400 leading-relaxed">이력서가 채용담당자에게 전달되었습니다.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-primary-100 border-2 border-primary-500 flex items-center justify-center shrink-0">
+              <i data-lucide="file-search" style="width:18px;height:18px;color:#ff7f65;"></i>
+            </div>
+            <div class="w-0.5 flex-1 bg-neutral-200 my-1.5"></div>
+          </div>
+          <div class="pb-6">
+            <p class="text-lg font-semibold text-neutral-900 leading-tight mb-1">서류 검토</p>
+            <p class="text-lg text-neutral-400 leading-relaxed">채용담당자가 이력서를 검토합니다. 보통 3~7일 소요됩니다.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center shrink-0">
+              <i data-lucide="phone-call" style="width:18px;height:18px;color:#999999;"></i>
+            </div>
+            <div class="w-0.5 flex-1 bg-neutral-200 my-1.5"></div>
+          </div>
+          <div class="pb-6">
+            <p class="text-lg font-semibold text-neutral-400 leading-tight mb-1">전형 안내 연락</p>
+            <p class="text-lg text-neutral-400 leading-relaxed">합격 시 등록된 전화번호로 연락을 드립니다.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center shrink-0">
+              <i data-lucide="handshake" style="width:18px;height:18px;color:#999999;"></i>
+            </div>
+          </div>
+          <div>
+            <p class="text-lg font-semibold text-neutral-400 leading-tight mb-1">면접 및 최종 합격</p>
+            <p class="text-lg text-neutral-400 leading-relaxed">면접 후 채용 여부를 안내 받습니다.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 안내 메모 -->
+    <div class="flex items-start gap-4 px-5 py-4 bg-primary-50 border border-primary-100 rounded-card">
+      <i data-lucide="lightbulb" style="width:20px;height:20px;color:#ff7f65;flex-shrink:0;margin-top:3px;"></i>
+      <p class="text-lg text-neutral-600 leading-relaxed">이력서를 최신 상태로 유지하면 합격률이 높아집니다. 지원 현황은 <strong class="font-semibold text-neutral-900">'내 계정 &gt; 지원 현황'</strong>에서 확인할 수 있습니다.</p>
+    </div>
+
+    <!-- 하단 액션 버튼 -->
+    <div class="flex flex-col gap-4">
+      <button class="np-btn np-btn-primary np-btn-lg w-full">
+        지원 현황 보기
+      </button>
+      <div class="flex gap-3">
+        <a href="index.html" class="np-btn np-btn-grey-stroke np-btn-lg flex-1">공고로 돌아가기</a>
+        <button class="np-btn np-btn-grey-stroke np-btn-lg flex-1">비슷한 공고 보기</button>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /PAGE CONTENT -->
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="np-footer">
+  <div class="np-footer-inner">
+    <div class="flex flex-col justify-between gap-8 flex-1">
+      <div>
+        <p class="np-footer-tagline">중장년층을 위한 일자리 매칭 플랫폼</p>
+        <p class="np-footer-info">
+          주식회사 모리아타운 &nbsp;|&nbsp; 대표: 권오형 &nbsp;|&nbsp; 사업자등록번호: 215-86-89431<br/>
+          주소: 05854 서울특별시 송파구 법원로 114 (문정동) 비동 915호 &nbsp;|&nbsp; 전화:
+          <a href="tel:02-6713-7076" class="underline hover:text-neutral-900 transition-colors">02-6713-7076</a><br/>
+          직업정보제공사업 신고번호: 서울동부 제2026-11호
+        </p>
+        <p class="np-footer-info mt-3">© 2026 NextPartner. All rights reserved.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <img src="img/symbol.png" width="40" height="40" alt="NextPartner" />
+        <div>
+          <p class="text-base font-bold text-neutral-900 leading-tight">NextPartner</p>
+          <p class="text-sm text-neutral-400 leading-tight">Senior Talent Marketplace</p>
+        </div>
+      </div>
+    </div>
+    <div class="shrink-0">
+      <p class="np-footer-section-title">Support</p>
+      <a class="np-footer-link">고객센터</a>
+      <a class="np-footer-link">회사소개</a>
+      <a class="np-footer-link">개인회원 이용약관</a>
+      <a class="np-footer-link">기업회원 이용약관</a>
+      <a class="np-footer-link">개인정보 처리방침</a>
+      <a class="np-footer-link">위치기반서비스</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     MOBILE BOTTOM NAVIGATION
+══════════════════════════════════════════ -->
+<nav class="np-bottom-nav md:hidden fixed bottom-0 left-0 right-0 z-50">
+  <div class="np-bottom-nav-item">
+    <i data-lucide="home" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">홈</span>
+  </div>
+  <div class="np-bottom-nav-item active">
+    <i data-lucide="briefcase" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">일자리</span>
+  </div>
+  <div class="np-bottom-nav-item">
+    <i data-lucide="file-pen-line" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">이력서 등록</span>
+  </div>
+  <div class="np-bottom-nav-item">
+    <i data-lucide="circle-user" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">내 계정</span>
+  </div>
+</nav>
+
+
+<script>
+  // 지원일시 자동 표시
+  (function () {
+    var el = document.getElementById('apply-datetime');
+    if (!el) return;
+    var now = new Date();
+    var pad = function (n) { return n < 10 ? '0' + n : n; };
+    el.textContent =
+      now.getFullYear() + '.' +
+      pad(now.getMonth() + 1) + '.' +
+      pad(now.getDate()) + '  ' +
+      pad(now.getHours()) + ':' +
+      pad(now.getMinutes());
+  })();
+</script>
+
+<script>
+  lucide.createIcons({ nameAttr: 'data-lucide' });
+</script>
+
+</body>
+</html>
